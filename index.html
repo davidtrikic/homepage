@@ -4,12 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Startpage</title>
-  <link rel="stylesheet" href="modern-normalize.css">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="modern-normalize.css" type="text/css">
+  <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
   <div class="container">
     <h1>David's Homepage</h1>
+    <!-- Search -->
+    <form action="https://www.startpage.com/search" id="search-form">
+      <input type="search" name="query" id="search" placeholder="Type to search" required />
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+    <!-- Links -->
     <div class="links">
       <!-- 1 -->
       <div class="link">
@@ -18,40 +24,41 @@
       </div>
       <!-- 2 -->
       <div class="link">
-        <a href="https://www.gsmarena.com/"><img src="icons/gsmarena.ico" alt="gsmarena"></a>
+        <a href="https://www.gsmarena.com/"><img src="icons/gsmarena.jpg" alt="gsmarena"></a>
         <div class="link-title"><span>GSMArena</span></div>
       </div>
       <!-- 3 -->
       <div class="link">
         <a href="https://nsuzivo.rs/"><img src="icons/nsuzivo.ico" alt="nsuzivo"></a>
-        <div class="link-title"><span>GSMArena</span></div>
+        <div class="link-title"><span>NS Uživo</span></div>
       </div>
       <!-- 4 -->
       <div class="link">
         <a href="https://www.ps2-home.com/forum/app.php/portal"><img src="icons/ps2home.ico" alt="ps2home"></a>
-        <div class="link-title"><span>GSMArena</span></div>
+        <div class="link-title"><span>PS2 Home</span></div>
       </div>
       <!-- 5 -->
       <div class="link">
         <a href="https://www.psx-place.com/forums/"><img src="icons/psxplace.jpg" alt=""></a>
-        <div class="link-title"><span>GSMArena</span></div>
+        <div class="link-title"><span>PSX Place</span></div>
       </div>
       <!-- 6 -->
       <div class="link">
         <a href="#"><img src="" alt=""></a>
-        <div class="link-title"><span>title</span></div>
+        <div class="link-title"><span></span></div>
       </div>
       <!-- 7 -->
       <div class="link">
         <a href="#"><img src="" alt=""></a>
-        <div class="link-title"><span>title</span></div>
+        <div class="link-title"><span></span></div>
       </div>
       <!-- 8 -->
       <div class="link">
         <a href="#"><img src="" alt=""></a>
-        <div class="link-title"><span>title</span></div>
+        <div class="link-title"><span></span></div>
       </div>
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
