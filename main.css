@@ -4,6 +4,7 @@
 }
 
 body {
+  height: 100vh;
   background: rgb(11,211,211);
   background: linear-gradient(0deg, rgba(11,211,211,1) 0%, rgba(248,144,231,1) 66%);
   font-family: "Titillium Web", sans-serif; 
@@ -47,7 +48,8 @@ form {
 form input[type='search'] {
   border: 1px solid #ddd;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: none;
   margin-top: 2rem;
   padding: 4px 8px;
   width: 60%;
@@ -86,6 +88,7 @@ form button {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  color: #ffffff;
 }
 
 
