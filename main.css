@@ -1,3 +1,16 @@
+@font-face {
+  font-family: poxcast;
+  src: url(fonts/Poxast-R9Jjl.ttf);
+}
+
+body {
+  background: rgb(11,211,211);
+  background: linear-gradient(0deg, rgba(11,211,211,1) 0%, rgba(248,144,231,1) 66%);
+  font-family: "Titillium Web", sans-serif; 
+  font-size: 1rem; 
+  color: #333;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -12,39 +25,61 @@ img {
   flex-direction: column;
   min-height: 100vh;
   min-width: 345px;
-  max-width: 60rem;
+  max-width: 40rem;
   padding: 1rem;
   margin: 0 auto;
   gap: 2rem;
 }
 
 h1 {
-  font-family: "Jersey 10", sans-serif;
+  font-family: poxcast, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+form {
+  display: flex; 
+  justify-content: center;
+}
+
+form input[type='search'] {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 2rem;
+  padding: 4px 8px;
+  width: 60%;
+}
+form button {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 7px 30px;
 }
 
 .links {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
   justify-content: space-between;
+  gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .link {
-  background-color: goldenrod;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.link a {
-  display: block;
-  background-color: red;
+.link img {
+  border-radius: 50%;
 }
 
 .link-title {
   display: block;
   text-wrap: nowrap;
+  text-align: center;
 }
 
 .date-weather-box {
