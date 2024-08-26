@@ -54,11 +54,6 @@ form input[type='search'] {
   padding: 4px 8px;
   width: 60%;
 }
-form button {
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  padding: 7px 30px;
-}
 
 .links {
   display: grid;
